@@ -30,10 +30,10 @@
 		mainMenu.appendChild(clonedMenu);
 	});
 	jQuery(document).ready(function($) {
-		$('.vertical_menu ul li.menu-item-has-children').append('<span class="mobile-arrows far fa-plus"></span>');
+		$('.vertical_menu ul li.menu-more').append('<span class="mobile-arrows far fa-plus"></span>');
 
 		$(".vertical_menu .mobile-arrows").click(function() {
-			$(this).parent().find('ul:first').slideToggle(300);
+			$(this).parent().find('ul:last').slideToggle(300);
 			$(this).toggleClass('is-open');
 		});
 	});
